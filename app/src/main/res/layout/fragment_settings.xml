@@ -1,0 +1,148 @@
+<!-- Okan Ari 200001696
+ Yiğitcan Güler 200001709-->
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="40dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+
+        tools:context=".LogInScreen">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/student_photo"
+            android:layout_width="148dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_action_name"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:layout_editor_absoluteX="106dp"
+
+            tools:layout_editor_absoluteY="41dp"
+            tools:srcCompat="@tools:sample/avatars"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="15dp"
+            android:text="First Name"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_input_text"
+            android:ems="10"
+            android:hint=" Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:text="Last Name"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_input_text"
+            android:ems="10"
+            android:hint=" Last Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Email:"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_input_text"
+            android:ems="10"
+            android:hint=" Email address"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Student Number"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/StudentNumber"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:text="Student number"
+            android:textColor="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/ApplyChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                android:text="Apply Changes"></Button>
+
+            <Button
+                android:id="@+id/logOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                android:text="Log out">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
